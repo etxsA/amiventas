@@ -1,0 +1,25 @@
+{
+  "name": "amiventa",
+  "version": "1.0.0",
+  "description": "Sistema de punto punto de ventas User-Friendly, enfocado a ser accesible y aplicable a cualquier circunstancia.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etxsA/amiventas.git"
+  },
+  "keywords": [
+    "POS",
+    "UserFriendly",
+    "Insigths",
+    "AI"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/etxsA/amiventas/issues"
+  },
+  "homepage": "https://github.com/etxsA/amiventas#readme"
+}
