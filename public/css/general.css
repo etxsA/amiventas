@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue: #0561FB;
+    --grey: #93A3AB;
+    --whtie: #FFFFFF;
+    --text-small: 0.5rem; 
+    --text-normal: 1rem; 
+    --text-normal-big: 1.5rem;
+    --text-big : 2rem; 
+    --text-xbig: 3rem; 
+
+}
+
+/*Text classes*/
+.tsm {
+    font-size: var(--text-small);
+}
+
+.tnm {
+    font-size: var(--text-normal);
+}
+
+.tbg {
+    font-size: var(--text-big);
+}
+.tnmbg {
+    font-size: var(--text-normal-big);
+}
+
+.txbg {
+    font-size: var(--text-xbig);
+}
+
+.icon-blue {
+    color: var(--blue);
+}
+
+.icon-grey {
+    color: var(--grey);
+}
+
+.icon-white {
+    color: var(--white);
+}
+
+.font-blue {
+    color: var(--blue);
+
+}
+
+.font-white {
+    color: var(--white);
+
+}
+
+.font-grey {
+    color: var(--grey);
+
+}
+
+/*Navbar*/
+body {
+    display: flex;
+    flex-flow: column wrap ;
+    flex-basis: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100dvw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 1rem 0;
+    gap: 2rem;
+    
+}
+
+.first {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.first > i {
+    transition: transform 0.2s ease-in-out;
+}
+.first > i:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.search {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.search input {
+    width: 100%;
+    padding: 12px 40px 12px 20px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+.search input:focus {
+    border-color: #377dff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.search input:focus + .search-icon {
+    color: #377dff;
+}

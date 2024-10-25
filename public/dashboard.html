@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Lupita</title>
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="first">
+            <h1 class="title font-blue tbg">Tienda Lupita</h1>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- Grid container -->
+        <div class="cards-grid">
+            <!-- First row -->
+            <div class="card">
+                <i class="fa-solid fa-money-bill fa-3x"></i>                
+                <p class="label font-gray">Presupuesto</p>
+                <p class="value tnmbg">25,000 MXN</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-cash-register fa-3x"></i>                
+                <p class="label font-grey">Ventas Semanales</p>
+                <p class="value tnmbg">10,000 MXN</p>
+            </div>
+
+            <div class="card inventory" onclick="window.location.href='/dashboard/inventory'">
+                <i class="fa-solid fa-boxes-stacked fa-3x"></i>                
+                <p class="label font-blue tnmbg">Ir a inventario</p>
+                <i class="fa-solid fa-arrow-right icon-blue "></i>
+            </div>
+
+            <!-- Second row -->
+            <div class="card big-card">
+                <p class="label font-blue tbg">Mis Proveedores</p>
+                <i class="fa-solid fa-arrow-right icon-blue fa-3x"></i>
+                <i class="fa-solid fa-truck fa-4x icon-blue"></i>  
+            </div>
+
+            <div class="card register big-card">
+                <p class="tbg">Registrar Venta</p>
+                <i class="fa-solid fa-arrow-right icon-white"></i>
+                <i class="fa-solid fa-receipt fa-3x icon-white"></i>            
+            </div>
+        </div>
+    </div>
+</body>
+</html>
