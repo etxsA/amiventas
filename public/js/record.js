@@ -33,6 +33,11 @@ document.getElementById("record").addEventListener("click", async () => {
                     });
 
                     const result = await response.json();
+                    if(result.hasOwnProperty("redirect")) {
+                        window.location.href = result.redirect;
+                    } else {
+                        return; 
+                    }
                     document.getElementById("status").innerText = `Transcription: ${result.transcription}`;
                 } catch (error) {
                     document.getElementById("status").innerText = "Error uploading audio.";

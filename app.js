@@ -7,6 +7,8 @@ import "dotenv/config"
 // Routes
 import dashboardRoutes from './routes/dashboard.routes.js';
 import modelRoutes from './routes/model.routes.js';
+import s3Routes from './routes/s3.routes.js';
+import producRoutes from './routes/producto.routes.js';
 const app = e();
 
 // Middlewares
@@ -19,6 +21,8 @@ app.use(e.json());
 // Routes 
 app.use(dashboardRoutes);
 app.use(modelRoutes)
+app.use(s3Routes);
+app.use(producRoutes);
 
 app.get('/404', (req, res) => {
     res.sendFile('404.html', { root: "public" });
