@@ -4,8 +4,9 @@ import bodyParser from "body-parser";
 
 import "dotenv/config"
 
-// 
+// Routes
 import dashboardRoutes from './routes/dashboard.routes.js';
+import modelRoutes from './routes/model.routes.js';
 const app = e();
 
 // Middlewares
@@ -17,6 +18,7 @@ app.use(e.json());
 
 // Routes 
 app.use(dashboardRoutes);
+app.use(modelRoutes)
 
 app.get('/404', (req, res) => {
     res.sendFile('404.html', { root: "public" });

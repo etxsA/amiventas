@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio Recorder</title>
+</head>
+<body>
+    <button id="startRecording">Start Recording</button>
+    <button id="stopRecording" disabled>Stop Recording</button>
+    <button id="sendRecording" disabled>Send Recording</button>
+    <p id="status"></p>
+    <script>
+        let mediaRecorder;
+        let audioChunks = [];
+
+        document.getElementById("startRecording").addEventListener("click", async () => {
+            const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+            mediaRecorder = new MediaRecorder(stream);
+
+            mediaRecorder.addEventListener("dataavailable", event => {
+                audioChunks.push(event.data);
+            });
+
+            mediaRecorder.addEventListener("stop", () => {
+                const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                audioChunks = [];
+                document.getElementById("status").innerText = "Recording complete. Ready to send.";
+                document.getElementById("sendRecording").disabled = false;
+
+                document.getElementById("sendRecording").onclick = async () => {
+                    const formData = new FormData();
+                    formData.append("audio", audioBlob, "recording.wav");
+                    const response = await fetch('/upload-audio', {
+                        method: 'POST',
+                        body: formData,
+                    });
+
+                    const result = await response.json();
+                    document.getElementById("status").innerText = `Transcription: ${result.transcription}`;
+                };
+            });
+
+            mediaRecorder.start();
+            document.getElementById("status").innerText = "Recording...";
+            document.getElementById("stopRecording").disabled = false;
+            document.getElementById("sendRecording").disabled = true;
+        });
+
+        document.getElementById("stopRecording").addEventListener("click", () => {
+            mediaRecorder.stop();
+            document.getElementById("stopRecording").disabled = true;
+        });
+    </script>
+</body>
+</html>

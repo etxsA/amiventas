@@ -15,15 +15,33 @@
             <h1 class="title font-blue tbg">Mi inventario</h1>
         </div>
         
-        <div>
-            <div class="search">
-                <input type="text" id="search-input" placeholder="Buscar" oninput="filterItems()">
-                <i class="fa fa-search search-icon"></i>
-            </div>
+        <div class="search">
+            <input type="text" id="search-input" placeholder="Buscar" oninput="filterItems()">
+            <i class="fa fa-search search-icon"></i>
+            
         </div>
     </nav>
-    <div class="container">
 
+    <div class="container">
+        <div class="mayor">
+            <p class="tnm bold">Mayor existencia: </p>
+            <div class="cards">
+                <div class="card">
+
+                </div>
+            </div>            
+        </div>
+        <div class="menor">
+            
+            <p class="tnm bold">Menor existencia: </p>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://placehold.co/50x80" alt="">
+                    <p class="description font-gray tnm"> Papas Sabritas</p>
+                    <p class="quantity bold tbg">x84</p>
+                </div>
+            </div>    
+        </div>
     </div>
 </body>
 </html>

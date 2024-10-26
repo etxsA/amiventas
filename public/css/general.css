@@ -9,8 +9,10 @@
     padding: 0;
 }
 
+
+
 :root {
-    --blue: #0561FB;
+    --blue: #266880;
     --grey: #93A3AB;
     --whtie: #FFFFFF;
     --text-small: 0.5rem; 
@@ -53,6 +55,10 @@
     color: var(--white);
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .font-blue {
     color: var(--blue);
 
@@ -77,7 +83,7 @@ body {
 
 .navbar {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -108,10 +114,12 @@ body {
 }
 
 .search {
-    position: relative;
-    width: 300px;
-    margin: 0 auto;
+    margin: 0 ;
+    display: flex;
+    align-items: center
+
 }
+
 
 .search input {
     width: 100%;
@@ -130,12 +138,10 @@ body {
 
 .search-icon {
     position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    color: #aaa;
-    font-size: 20px;
-    transition: color 0.3s ease;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    pointer-events: none; 
 }
 
 .search input:focus + .search-icon {
