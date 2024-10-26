@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-image: url('../img/back.svg'); /* Replace with your image path */
+    background-size: cover; /* Makes the image cover the screen without stretching */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.tindo {
+    position: absolute;
+    bottom: 0;
+    width: 40vw;
+    height: 40vw;
+    background-image: url('../img/TINDO.png'); /* Replace with your image path */
+    background-size: cover; /* Makes the image cover the screen without stretching */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.status {
+    margin-top: 4vh;
+    margin-right: 2vw;
+    position: absolute;
+    width: 20vw;
+    height: 10vw;
+    top: 0;
+    right: 0;;
+}
+
+.record {
+    margin-top: 35vh;
+    margin-left: 10vw;
+    position: absolute;
+    width: 30vw;
+    height: 10vw;
+    top: 0;
+    left: 0;;
+}
+
+.mic {
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.mic:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+@media (max-width : 1200px) {
+    .status > p {
+        font-size: var(--text-normal-big);
+    }
+    .record > p {
+        font-size: var(--text-normal-big);
+    }
+
+}
+/* Responsive design */
+@media (max-width: 768px) {
+
+    .status > p {
+        font-size: var(--text-normal);
+    }
+    .record > p {
+        font-size: var(--text-normal);
+    }
+
+}
+
+@media (max-width: 480px) {
+    .status > p {
+        font-size: var(--text-small);
+    }
+    .record > p {
+        font-size: var(--text-small);
+    }
+
+
+}
+

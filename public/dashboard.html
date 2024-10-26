@@ -6,12 +6,11 @@
     <title>Tienda Lupita</title>
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/dashboard.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar nav-dashboard">
         <div class="first">
-            <h1 class="title font-blue tbg">Tienda Lupita</h1>
+            <h1 class="title font-blue tbg w800">Tienda Lupita</h1>
         </div>
     </nav>
 
@@ -21,35 +20,91 @@
         <div class="cards-grid">
             <!-- First row -->
             <div class="card">
-                <i class="fa-solid fa-money-bill fa-3x"></i>                
-                <p class="label font-gray">Presupuesto</p>
+                <svg width="119" height="120" viewBox="0 0 119 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.5967 15C48.3983 15 38.1965 18.73 32.1597 21.7775C31.6143 22.0525 31.1053 22.3208 30.6326 22.5825C29.6954 23.0975 28.8971 23.5775 28.2625 24L35.1298 34.195L38.3626 35.4925C50.9964 41.92 67.9391 41.92 80.5754 35.4925L84.2445 33.5725L90.7375 24C89.391 23.1178 87.9927 22.3188 86.5502 21.6075C80.5431 18.5925 70.5843 15 59.5992 15M43.6284 26.54C41.1971 26.0786 38.7955 25.4709 36.4363 24.72C42.0913 22.1875 50.518 19.5 59.5992 19.5C65.8888 19.5 71.8363 20.79 76.755 22.425C70.9909 23.2425 64.8401 24.63 58.9794 26.3375C54.3681 27.6825 48.9784 27.5375 43.6284 26.54ZM83.1959 39.2L82.586 39.51C68.6878 46.58 50.2527 46.58 36.3545 39.51L35.7768 39.215C14.8948 62.3175 -1.04623 104.993 59.5967 104.993C120.24 104.993 103.912 61.525 83.1959 39.2ZM57.0208 60C55.7058 60 54.4446 60.5268 53.5147 61.4645C52.5849 62.4021 52.0625 63.6739 52.0625 65C52.0625 66.3261 52.5849 67.5979 53.5147 68.5355C54.4446 69.4732 55.7058 70 57.0208 70V60ZM61.9792 55V52.5H57.0208V55C54.3908 55 51.8684 56.0536 50.0087 57.9289C48.1489 59.8043 47.1042 62.3478 47.1042 65C47.1042 67.6522 48.1489 70.1957 50.0087 72.0711C51.8684 73.9464 54.3908 75 57.0208 75V85C54.8639 85 53.0269 83.6125 52.3426 81.6675C52.2411 81.3493 52.0773 81.0548 51.861 80.8016C51.6447 80.5483 51.3802 80.3413 51.0831 80.193C50.7861 80.0446 50.4625 79.9578 50.1317 79.9377C49.8008 79.9176 49.4692 79.9646 49.1567 80.0759C48.8441 80.1873 48.5569 80.3607 48.312 80.586C48.0671 80.8112 47.8694 81.0837 47.7308 81.3873C47.5921 81.691 47.5152 82.0196 47.5047 82.3537C47.4941 82.6878 47.5501 83.0206 47.6694 83.3325C48.3529 85.2826 49.6193 86.9711 51.2941 88.1652C52.9689 89.3593 54.9697 90.0003 57.0208 90V92.5H61.9792V90C64.6092 90 67.1316 88.9464 68.9913 87.0711C70.851 85.1957 71.8958 82.6522 71.8958 80C71.8958 77.3478 70.851 74.8043 68.9913 72.9289C67.1316 71.0536 64.6092 70 61.9792 70V60C64.136 60 65.9731 61.3875 66.6573 63.3325C66.7589 63.6507 66.9226 63.9452 67.139 64.1984C67.3553 64.4517 67.6198 64.6587 67.9169 64.807C68.2139 64.9554 68.5374 65.0422 68.8683 65.0623C69.1992 65.0824 69.5307 65.0354 69.8433 64.9241C70.1558 64.8127 70.4431 64.6393 70.688 64.414C70.9329 64.1888 71.1306 63.9163 71.2692 63.6127C71.4079 63.309 71.4848 62.9804 71.4953 62.6463C71.5058 62.3122 71.4498 61.9794 71.3306 61.6675C70.647 59.7174 69.3806 58.0289 67.7058 56.8348C66.0311 55.6407 64.0303 54.9997 61.9792 55ZM61.9792 75V85C63.2942 85 64.5554 84.4732 65.4852 83.5355C66.4151 82.5979 66.9375 81.3261 66.9375 80C66.9375 78.6739 66.4151 77.4021 65.4852 76.4645C64.5554 75.5268 63.2942 75 61.9792 75Z" fill="black"/>
+                    </svg>                                
+                <p class="font-grey tnmbg">Presupuesto</p>
                 <p class="value tnmbg">25,000 MXN</p>
             </div>
 
             <div class="card">
-                <i class="fa-solid fa-cash-register fa-3x"></i>                
-                <p class="label font-grey">Ventas Semanales</p>
+                <svg width="122" height="117" viewBox="0 0 122 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.8725 40.5015V18.3739H90.1275V40.5015H31.8725ZM36.9558 35.6265H85.0442V23.2489H36.9558V35.6265ZM19.1642 98.6212V85.8682H102.836V98.6212H19.1642ZM19.1642 82.1194L35.0953 45.3716H86.9047L102.841 82.1194H19.1642ZM42.4255 74.2462H51.423V70.4925H42.4255V74.2462ZM42.4255 65.6175H51.423V61.8686H42.4255V65.6175ZM42.4255 56.9936H51.423V53.2447H42.4255V56.9936ZM56.5063 74.2462H65.4987V70.4925H56.5012L56.5063 74.2462ZM56.5063 65.6175H65.4987V61.8686H56.5012L56.5063 65.6175ZM56.5063 56.9936H65.4987V53.2447H56.5012L56.5063 56.9936ZM70.5821 74.2462H79.5745V70.4925H70.577L70.5821 74.2462ZM70.5821 65.6175H79.5745V61.8686H70.577L70.5821 65.6175ZM70.5821 56.9936H79.5745V53.2447H70.577L70.5821 56.9936Z" fill="black"/>
+                    </svg>
+                <p class="font-grey tnmbg">Ventas Diarias</p>
                 <p class="value tnmbg">10,000 MXN</p>
             </div>
 
             <div class="card inventory" onclick="window.location.href='/dashboard/inventory'">
-                <i class="fa-solid fa-boxes-stacked fa-3x"></i>                
-                <p class="label font-blue tnmbg">Ir a inventario</p>
-                <i class="fa-solid fa-arrow-right icon-blue "></i>
+                <svg width="116" height="103" viewBox="0 0 116 103" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="116" height="103" fill="url(#pattern0_126_737)"/>
+                    <defs>
+                    <pattern id="pattern0_126_737" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_126_737" transform="matrix(0.0098659 0 0 0.0111111 0.0560345 0)"/>
+                    </pattern>
+                    <image id="image0_126_737" width="90" height="90" xlink:href="data:image/png;base64,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"/>
+                    </defs>
+                    </svg>                                    
+                <p class="label grey-blue tbg">Ir a inventario</p>
+                <svg id="second" width="76" height="81" viewBox="0 0 76 81" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="76" height="81" fill="url(#pattern0_126_740)"/>
+                    <defs>
+                    <pattern id="pattern0_126_740" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_126_740" transform="matrix(0.0111111 0 0 0.0104252 0 0.0308642)"/>
+                    </pattern>
+                    <image id="image0_126_740" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD7ElEQVR4nO2dS0tVURTHf6ClUdSwzKDC+gI9RhVFWOEgskEFPaD3xEArTJs1yxyF4Nfo5aDQD1CEYdmkSTXpnY8adQVzxYFVxMXHLffZZ51z1w/+IJd7Ze8/m733WmftfcBxHMdxHMdxHMepmBpgO3AO6AXuAaPAa2ACmFJN6Gej+p1b+ptt+j+cWVgHdAADwHdAFqlvwAOgHWikylkGnAKGgJ8BzJ1L08AgcBKop4pYoSPtfYrmzqUvwA1gFQVmCdAJjGdgcLmSNlzVNhWKXcBLAwaX6xXQTAFI5sR+YMaAqXMpaVsfUEdO2QA8MWCkVKhnwCZyRnOgbZpEVrIt3EtOOAz8MGCa/KeSYOgYxrmY8p5YIinpwwWM0qrBQdYmSUCzj2KMZF4rGTBHUphG9mOEzTld+OQfFsimrE2u022RFFzDWe+z+w2YIJGUBDWZhdWWIz4JrKSvu2ObXAu8MNB5iayXsRNRnQY6LRnpcsx88piBDktGGlMPUqfLQGclYyW57NQfP30yEkh0AWtUXZEDpg9pPxY7ZcBkUWPLaYls9ok0jR4yYLLoKJ6NAxEzhw/TMrnRUNJozTztjGX2z7RKGToMGCyq7gXaGmsauZSG0QMGDBZVSc3M2uy7oU1OSqwmDRgsZTuPgwu0O+1pZDJ0+dl2A8aK0ZG9NaTR5w2YKkZH9pmQRvcaMFSMmn0zpNH3DZgpRs2+E9LovKRESxnM2SMhjX4bcNR1Ag1kS0iz34RsWKi06DXs0B2oT19DNmoqUKMasMPqgNOVOaPXYoe1Fo0eSzG9mRXXLU4dIRfDLgMj2+xi6Ns74mzvPGAhTsDiIThxQvBzgeYzKWBS6XRIoz1NypxGbwlptCf+iZP4R89WixGVDCT8gy+Ev2k3YLBUGPjEejjblobRSZDh5Qb8MXl6gbKHRTFoYDRL0Qto0KsYxGhdR0vkkrDjaRc5fjSyd+7WtGuD/h3T5Pcx7v6o5iJ0UV0hAss1NShVqrFYhehoIbZUqdqJfFjouYFOS9EPCyXs9ONv8egzMMokkm6TIXV6fFcKrqfAUjKmSQ+mS0E1CWzECHtyfuuMzBMY7cMYhwwlnSTQGZUjGOVCQa76mdaacNO05nwaKVm84me+q3++5XTh20POWA88NmCeVKhhC1f6LGaf3Wc8gpzRYCTzfXKocP2FAVPLlbRpBwWjVi8VsZBi/apZuKRNhWW5dvJdBgZ/1ou6V1JF1OtVDI9SDnSm9UHq8Wq7en42GvQA+119G8VizZ3Q/9WWZklA3qnRerazQI9WA43oq0DG/3o9yLh+NqLf6dFTrMlv/fUgjuM4juM4juM4VMgvsFJQNF1us8cAAAAASUVORK5CYII="/>
+                    </defs>
+                    </svg>                    
             </div>
 
             <!-- Second row -->
             <div class="card big-card">
-                <p class="label font-blue tbg">Mis Proveedores</p>
-                <i class="fa-solid fa-arrow-right icon-blue fa-3x"></i>
-                <i class="fa-solid fa-truck fa-4x icon-blue"></i>  
-            </div>
+                <p class="font-grey tnm">Presupuesto Independiente</p>
+                <p class="label font-black tbg bold">Mis Proveedores</p>
+                <svg width="50" height="81" viewBox="0 0 76 81" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="76" height="81" fill="url(#pattern0_126_742)"/>
+                    <defs>
+                    <pattern id="pattern0_126_742" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_126_742" transform="matrix(0.0111111 0 0 0.0104252 0 0.0308642)"/>
+                    </pattern>
+                    <image id="image0_126_742" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD7ElEQVR4nO2dS0tVURTHf6ClUdSwzKDC+gI9RhVFWOEgskEFPaD3xEArTJs1yxyF4Nfo5aDQD1CEYdmkSTXpnY8adQVzxYFVxMXHLffZZ51z1w/+IJd7Ze8/m733WmftfcBxHMdxHMdxHMepmBpgO3AO6AXuAaPAa2ACmFJN6Gej+p1b+ptt+j+cWVgHdAADwHdAFqlvwAOgHWikylkGnAKGgJ8BzJ1L08AgcBKop4pYoSPtfYrmzqUvwA1gFQVmCdAJjGdgcLmSNlzVNhWKXcBLAwaX6xXQTAFI5sR+YMaAqXMpaVsfUEdO2QA8MWCkVKhnwCZyRnOgbZpEVrIt3EtOOAz8MGCa/KeSYOgYxrmY8p5YIinpwwWM0qrBQdYmSUCzj2KMZF4rGTBHUphG9mOEzTld+OQfFsimrE2u022RFFzDWe+z+w2YIJGUBDWZhdWWIz4JrKSvu2ObXAu8MNB5iayXsRNRnQY6LRnpcsx88piBDktGGlMPUqfLQGclYyW57NQfP30yEkh0AWtUXZEDpg9pPxY7ZcBkUWPLaYls9ok0jR4yYLLoKJ6NAxEzhw/TMrnRUNJozTztjGX2z7RKGToMGCyq7gXaGmsauZSG0QMGDBZVSc3M2uy7oU1OSqwmDRgsZTuPgwu0O+1pZDJ0+dl2A8aK0ZG9NaTR5w2YKkZH9pmQRvcaMFSMmn0zpNH3DZgpRs2+E9LovKRESxnM2SMhjX4bcNR1Ag1kS0iz34RsWKi06DXs0B2oT19DNmoqUKMasMPqgNOVOaPXYoe1Fo0eSzG9mRXXLU4dIRfDLgMj2+xi6Ns74mzvPGAhTsDiIThxQvBzgeYzKWBS6XRIoz1NypxGbwlptCf+iZP4R89WixGVDCT8gy+Ev2k3YLBUGPjEejjblobRSZDh5Qb8MXl6gbKHRTFoYDRL0Qto0KsYxGhdR0vkkrDjaRc5fjSyd+7WtGuD/h3T5Pcx7v6o5iJ0UV0hAss1NShVqrFYhehoIbZUqdqJfFjouYFOS9EPCyXs9ONv8egzMMokkm6TIXV6fFcKrqfAUjKmSQ+mS0E1CWzECHtyfuuMzBMY7cMYhwwlnSTQGZUjGOVCQa76mdaacNO05nwaKVm84me+q3++5XTh20POWA88NmCeVKhhC1f6LGaf3Wc8gpzRYCTzfXKocP2FAVPLlbRpBwWjVi8VsZBi/apZuKRNhWW5dvJdBgZ/1ou6V1JF1OtVDI9SDnSm9UHq8Wq7en42GvQA+119G8VizZ3Q/9WWZklA3qnRerazQI9WA43oq0DG/3o9yLh+NqLf6dFTrMlv/fUgjuM4juM4juM4VMgvsFJQNF1us8cAAAAASUVORK5CYII="/>
+                    </defs>
+                    </svg>
+                                    
+                    <svg width="100" height="100" viewBox="0 0 162 146" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="162" height="146" fill="url(#pattern0_134_528)"/>
+                        <defs>
+                        <pattern id="pattern0_134_528" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_134_528" transform="matrix(0.00901235 0 0 0.01 0.0493827 0)"/>
+                        </pattern>
+                        <image id="image0_134_528" width="100" height="100" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                        </svg>
+                                    </div>
 
             <div class="card register big-card">
-                <p class="tbg">Registrar Venta</p>
-                <i class="fa-solid fa-arrow-right icon-white"></i>
-                <i class="fa-solid fa-receipt fa-3x icon-white"></i>            
-            </div>
+                <p class="font-grey tnm">Registro de producto</p>
+                <p class="tbg bold">Mis ventas</p>
+                <svg width="50" height="80" viewBox="0 0 79 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="79" height="80" fill="url(#pattern0_134_932)"/>
+                    <defs>
+                    <pattern id="pattern0_134_932" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_134_932" transform="matrix(0.01 0 0 0.009875 0 0.00625)"/>
+                    </pattern>
+                    <image id="image0_134_932" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEjklEQVR4nO2dy4tURxSHyyhGBVHjCxUfq8SsEnHhJoqiMfiOIeYPMDAyTnyQTBbdoGsXJvgENSSIS0HxsVKzEiU737rRmYlOxo06jq6UoJ8cpiRG0OmZuVV16t7zQW+6m+6q++PW49Q5v+ucYRiGYRiGYRiGYRhGvwAmAV8Bm4H9wJ/ANaAN6Aae+1e3f08+O+e/uwlYCky0yz5AgFHAGmC3v7gvGTzyG1eBXcBqYKQJ9H4RPgC+AA4CTwiP/McRYBUw1MT5T4gRwEagnXTIMNcMfFj1YakVuI8e7gM/SttclfDDRAd66QS+dWUHmAWcJh9OAjNcGQG+9svS3HgCfOfKgkyUfvmaOwezn/SB8cBflIcLwEcuR4CpflNXNm4B011OALOBe5SXu8AnLgeAacDflJ9/gJkugzlDbumqcFPtnOJXU2WawBvlosrVF7CP6rLbaULCDKmviAK+cYrCIT2pr4YCHquY5IFTqa+EIk5oiE8Z/2dVyvOMKuw3+kt7kuNh4Od+N7U6bE2x5+hK3WvFyMnjiJiCyBm41nDGNmA9cAD4N2FbNsTMDkmZkPAuJLI89q22zgMekoY7wJAYgixCJ4vf0d7PE4qyIIYgf6CT0e9p85xEovwWY6n7FJ182kfbU4jSE3QJ7NM7tXK4gfanEGVFSEG0JyvUG+jDZ8CDiG3aGVKQHM7I6w2KEutOuRyyJKCILPQYtCoavl4AE0IIIvUZOVFvoE+xlsRLQggixTK5UVciSksIQaQaKUfqCkTZE0IQKRHLldYG55RHgf7/TAhBrgdq7A3gGHA08GtOQlGuhhCkI0BW+TKnDHpFKToa0R6ioUWPsc1OKcAPBff1QYhGStlxkUxxSgEmF9zXZyEaWSVBpuYgSNFD1kanFHrNBtQPWUVP6jJxLnfKIKNJPdSyV7LlbdnbX2xjqG9jmGvopFbW0EmOwcWaAjGCBRdzC7/XlIgRLPw+0Q6oBnxANb5wQTI6wq010I+YuVqXgojhOyLmX5qpKRMjeJKDOLFp5bDSNKDloRPlYri9DYTZCsV4HDwLHvgdnYxWJoZwKKgYvnML0clihcnW82OVI4hHoTauKStHuB2lHMF3VAwjNdIFbAe+9/5WKQt2mqKI4QWxkra+PRvj2m0AP/XRqCqzOaoYbyyBNTuLkrCULV7B51uiLEvWbb2EqwdpUBSxUjV6OZ5UDC/IDL8jrTrdarwYgZUZheZDIH1f6zSRQblbSH512vB7E7G7qxrngeFOI8AY4ArV4YZaE8wK2sR2ZmPULybD3my4rNwFPnY5IcnU/plPZfTqne5yRMbXkk3054FxLmeAYcCOzPcpL/2yXudqahA+Kbk+0GWdKyPia5tZ7Ot4tvPFAEItGl3pXtOWPGobG/GREvdO75OoaW+xJdl5hqKQywZ/sEPChISmUk3aRQDM9auZh5Hc3uTRq0uiZYdk/jjWFRJFFb8pn0E+WOQ3LgG/SHpnpYelwQJMAL6UwhdgL3DWBzHbvBXG68d3P/LvyWdn/Hdb/F0QpiTAMAzDMAzDMAzDMAxXXl4B5CMqBNcShA8AAAAASUVORK5CYII="/>
+                    </defs>
+                    </svg>
+                    
+                <svg width="120" height="100" viewBox="0 0 167 184" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="167" height="184" fill="url(#pattern0_134_931)"/>
+                    <defs>
+                    <pattern id="pattern0_134_931" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_134_931" transform="matrix(0.01 0 0 0.00907609 0 0.0461957)"/>
+                    </pattern>
+                    <image id="image0_134_931" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADV0lEQVR4nO2dT2sTQRiHA+1Fi1UsnkUQbf0MerdYkWpB8TNoUfQz2CqIUNBPoceqJ716Lf49VA+JtSBGUFFBD48snWqcbDK7OxO6s/N7IKe8eWf4PXmTZneTtlpCCCGEEEIIUVOAU8B7RFk6wOwohGSNRTXaoxAiPJCQ1IQEX6BhICH1QkJqhoSkLkSUI7SMsZLri37GQgo5kbOAKMfxkEKWSy4u+lkKKeSF1fx8sOYNBbhgZfY8VOODVuPfwL4gzRsMsBf4ZWV3KETjy1bTJ0F2nADAUyu7SyGaPraaXguy2wQArlvZPfJtOAH8tJpOB9txwwGmreyyLCd8Gs5ZDdeD7jgBgHUrwzmfZvesZitBd5sAwIqV4V2fZm+tZuFPRTYcYNbK8F3VRsesRj+A3cF33HCAXcB3K8uZKo2uWk1WR7LjBAAeWlleqdJk1Wqy6Kg/DXwGNoEzBfqPuv6cqf9UsH6hp/5swT94NoAP2RU5jtpF7yc30C0zZsDHntrNAv3rXL9RoD6TsU3HUTtjZdl19c9r8s1qMjWkdpJ+9qh+C+CAlc3XVlmAl0UPKALzOUIGvkwkWH/R+0AjcMdqkl0ot3/AQbQ3ORt8ld2neqasl7eM21WEHDFHdntpmze/SXObHyBjm9emJtX6BZNZL1mmh0sLMVJuDVlcVGO5kgwjZDznQ80w7gMPVD+QLMvxykKMlCJkJ2JumIshsttSzsmZlOv/4iVjgJBn5jPKF2ANuJm93+Q87qi5b83UplbfNVn9RyUJ1kJhGyYGElIvJKRmSEjNkJCaISE1Y8eFJPRt3U6RU9p1EJLSt3XbMQhJipaE1IvohHhvIPL1JGTESIgDTUjkAfmiCXEgIZEH5IsmxIGERB6QL5oQBxISeUC+aEIcSEjkAfmiCXEgIZEH5IsmxIGERB6QL8lPCP/O0eeew3YF5Hq8hJR/RnaGncMuIGTo4yVEQuJ+zWTrlxA65ptIJ8uu53p8bHns/AYiX09CRoyEONCERB6QL5oQBxISeUC+aEIcSEjkAfmiCXEgIZEH5IsmxIGERB6QL5oQBxISeUC+aEIcSEjkAfmiCXEgIZEH1LgJEX5ISAOFpPRTGfX/R/c9V20IP4Jc9SKEEEIIIYQQrcD8AW1h0sUHPuORAAAAAElFTkSuQmCC"/>
+                    </defs>
+                    </svg>
+                </div>
         </div>
     </div>
 </body>
